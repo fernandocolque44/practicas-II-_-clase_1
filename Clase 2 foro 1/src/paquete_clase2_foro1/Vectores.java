@@ -12,7 +12,7 @@ public class Vectores {
         Scanner ar = new Scanner(System.in);
         int[] arreglo ;
         int a, aux;
-        boolean bandera;
+        boolean bandera,bandera2;
         arreglo = new int [5];
         for (int i = 0;i <= 4; i++){
            System.out.print("ingresa un número ");
@@ -30,15 +30,16 @@ public class Vectores {
       
        do{ 
           bandera = false;
-            for(int x =0; x < arreglo.length -1;x++){
-                if(arreglo[x] > arreglo[x+1]){ 
-                    aux = arreglo[x];
-                    arreglo[x]= arreglo[x+1];
-                    arreglo[x]= aux;
-                    bandera = true;
-                }   
-            }
-        }while(bandera);
+
+                for(int x =0; x < arreglo.length -1;x++){
+                    if(arreglo[x] > arreglo[x+1]){ 
+                        aux = arreglo[x];
+                        arreglo[x]= arreglo[x+1];
+                        arreglo[x+1]= aux;
+                        bandera = true;
+                    }   
+              }
+        }while(bandera == true);
        System.out.println("_____________");
         for(int i =0;i<=4;i++){
             System.out.println(arreglo[i]);}     
