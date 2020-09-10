@@ -34,7 +34,7 @@ public class Vectores {
                 if(arreglo[x] > arreglo[x+1]){ 
                     aux = arreglo[x];
                     arreglo[x]= arreglo[x+1];
-                    arreglo[x]= aux;
+                    arreglo[x+1] = aux;
                     bandera = true;
                 }   
             }
