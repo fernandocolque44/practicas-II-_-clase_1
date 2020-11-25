@@ -30,6 +30,7 @@ public class Vectores {
       
        do{ 
           bandera = false;
+<<<<<<< HEAD
 
                 for(int x =0; x < arreglo.length -1;x++){
                     if(arreglo[x] > arreglo[x+1]){ 
@@ -40,6 +41,17 @@ public class Vectores {
                     }   
               }
         }while(bandera == true);
+=======
+            for(int x =0; x < arreglo.length -1;x++){
+                if(arreglo[x] > arreglo[x+1]){ 
+                    aux = arreglo[x];
+                    arreglo[x]= arreglo[x+1];
+                    arreglo[x+1] = aux;
+                    bandera = true;
+                }   
+            }
+        }while(bandera);
+>>>>>>> a8005cf88e8939f5acd5921057442778a933da58
        System.out.println("_____________");
         for(int i =0;i<=4;i++){
             System.out.println(arreglo[i]);}     
